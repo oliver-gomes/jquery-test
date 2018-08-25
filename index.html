@@ -3,19 +3,46 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>jQuery Crash Course</title>
+    <style>
+        body{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            line-height: 1.5em;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+        }
+        #container{
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+
+    </style>
 </head>
 
     <body>
-        <div id="content">
+      <header>
+          <h1>jQuery Crash Course</h1>
+      </header>
+      <div id="container">
+        <h1 id="heading1">Heading One</h1>
+         <p id="para1">
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus harum ad molestias. Maiores, esse placeat exercitationem autem animi quo aliquam, reprehenderit consequatur fugiat, modi aliquid dolore. Molestias iste quos enim, reiciendis dolorem <span>voluptatum omnis temporibus</span> quibusdam mollitia dolores minima at pariatur sed sapiente odit nobis molestiae maiores veritatis velit porro?
+         </p>
 
-            <p>blah blah blah</p>
-            <p>blah blah blah</p>
-            <p>blah blah blah</p>
-            <p>blah blah blah</p>
-            <p>blah blah blah</p>
-            <p>grab me</p>
-        </div>
+         <h1 id="heading2">Heading Two</h1>
+         <p id="para2">
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus harum ad molestias. Maiores, esse placeat exercitationem autem animi quo aliquam, reprehenderit consequatur fugiat, modi aliquid dolore. Molestias iste quos enim, reiciendis dolorem <span>voluptatum omnis temporibus</span> quibusdam mollitia dolores minima at pariatur sed sapiente odit nobis molestiae maiores veritatis velit porro?
+         </p>
+      </div>
 
        <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
