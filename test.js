@@ -25,6 +25,28 @@
 //   $('.para1').show();
 // })
 
-$('#btn1').dblclick(function(){
-  $('.para1').toggle();
-})
+// $('#btn1').dblclick(function(){
+//   $('.para1').toggle();
+// })
+
+// $('#btn1').hover(function(){
+//   $('.para1').toggle();
+// })
+
+// $(document).on('mousemove', function(e){
+//   $('#coords').html('Coords: Y: '+e.clientY+ ' X: '+e.clientX );
+// })
+
+// DOM manipulation
+
+// $('p.para1').css({color:'red',background:'#ccc'});
+// // $('p.para2').addClass('myClass');
+// // $('p.para2').removeClass('myClass');
+// $('#btn1').click(function(){
+//   $('p.para2').toggleClass('myClass');
+// })
+// $('#myDiv').text('Hello World');
+$('ul').append('<li>Append List Item</li>')
+$('ul').prepend('<li>Prepend List Item</li>')
+$('.para1').appendTo('.para2');
+$('.para1').prependTo('.para2');
