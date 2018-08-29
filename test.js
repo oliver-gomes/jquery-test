@@ -57,22 +57,85 @@
 // $('a').attr('target', '_blank')
 
 
-$('#newItem').keyup(function(e){
-  var code = e.which;
-  if(code === 13){
-    e.preventDefault();
-    $('ul').append('<li>' +e.target.value +'</li>');
+// $('#newItem').keyup(function(e){
+//   var code = e.which;
+//   if(code === 13){
+//     e.preventDefault();
+//     $('ul').append('<li>' +e.target.value +'</li>');
 
-  }
+//   }
+// })
+
+// var myArr = ['Brad', 'Kelley', 'Nate', 'Jose'];
+
+// $.each(myArr, function(i, val){
+//   $('#users').append('<li>'+val+'</li')
+// })
+
+// var newArr = $('ul#list li').toArray();
+// $.each(newArr, function(i, val){
+//   console.log(val.innerHTML);
+// })
+
+// Effect and Animation
+
+$('#btnFadeOut').click(function(){
+  $('#box').fadeOut(2000, function(){
+    $('#btnFadeOut').text('Its Gone')
+  });
 })
 
-var myArr = ['Brad', 'Kelley', 'Nate', 'Jose'];
-
-$.each(myArr, function(i, val){
-  $('#users').append('<li>'+val+'</li')
+$('#btnFadeIn').click(function(){
+  $('#box').fadeIn();
 })
 
-var newArr = $('ul#list li').toArray();
-$.each(newArr, function(i, val){
-  console.log(val.innerHTML);
+$('#btnFadeTog').click(function(){
+  $('#box').fadeToggle();
+})
+
+$('#btnSlideUp').click(function(){
+  $('#box').slideUp(2000);
+})
+
+$('#btnSlideDown').click(function(){
+  $('#box').slideDown(2000);
+})
+
+$('#btnSlideTog').click(function(){
+  $('#box').slideToggle(2000);
+})
+
+$('#btnStop').click(function(){
+  $('#box').stop();
+})
+
+
+$('#moveRight').click(function(){
+  $('#box2').animate({
+    left: 500
+  });
+})
+
+$('#moveLeft').click(function(){
+  $('#box2').animate({
+    left: 0
+  });
+})
+
+$('#moveAround').click(function(){
+  var box = $('#box2');
+  box.animate({
+    left: 300
+  })
+  box.animate({
+    top: 300
+  })
+  box.animate({
+    left: 0,
+    top: 300
+  })
+  box.animate({
+    left: 0,
+    top: 0
+  })
 })
