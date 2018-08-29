@@ -46,7 +46,33 @@
 //   $('p.para2').toggleClass('myClass');
 // })
 // $('#myDiv').text('Hello World');
-$('ul').append('<li>Append List Item</li>')
-$('ul').prepend('<li>Prepend List Item</li>')
-$('.para1').appendTo('.para2');
-$('.para1').prependTo('.para2');
+// $('ul').append('<li>Append List Item</li>')
+// $('ul').prepend('<li>Prepend List Item</li>')
+// $('.para1').appendTo('.para2');
+// $('.para1').prependTo('.para2');
+// $('ul').before('<h4>Hello</h4>')
+// $('ul').after('<h4>World</h4>')
+// $('ul').empty();
+// $('ul').detach();
+// $('a').attr('target', '_blank')
+
+
+$('#newItem').keyup(function(e){
+  var code = e.which;
+  if(code === 13){
+    e.preventDefault();
+    $('ul').append('<li>' +e.target.value +'</li>');
+
+  }
+})
+
+var myArr = ['Brad', 'Kelley', 'Nate', 'Jose'];
+
+$.each(myArr, function(i, val){
+  $('#users').append('<li>'+val+'</li')
+})
+
+var newArr = $('ul#list li').toArray();
+$.each(newArr, function(i, val){
+  console.log(val.innerHTML);
+})
